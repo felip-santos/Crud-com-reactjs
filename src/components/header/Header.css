@@ -1,0 +1,50 @@
+#container-header{
+    width: 240px;
+    height: 100vh;
+    background-color: rgb(241, 241, 241);
+}
+
+#container-header .container-img{
+    width: 100%;
+    height: 140px;
+}
+
+.container-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#container-header #container-navlinks{
+    position: relative;
+    width: 100%;
+}
+
+#container-navlinks .container-btn{
+    width: 100%;
+    height: 60px;
+    padding-left: 1rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+
+#container-navlinks .container-btn:hover{
+    background-color: rgb(231, 231, 231);
+}
+
+.container-btn img{
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+}
+
+.container-btn button{
+    padding: 5px 7px 7px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .3px;
+    border: none;
+    background-color: transparent;
+}

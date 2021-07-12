@@ -1,0 +1,72 @@
+.container-select{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.container-select .content{
+    width: 500px;
+    padding: 2rem 1rem 1rem;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.content h1{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.content .content-genre{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 7px;
+}
+
+.content-genre span{
+    text-transform: capitalize;
+    padding: 3px 15px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: all .2s ease;
+    background-color: rgb(197, 197, 197);
+}
+
+.content-genre .active{
+    box-shadow: 0 0 0 1px rgb(51, 51, 51);
+}
+
+.content-genre span:hover{
+    box-shadow: 0 0 0 1px rgb(51, 51, 51);
+}
+
+.content .btnConfirm{
+    width: 100px;
+    height: 30px;
+    border: none;
+    margin-top: 6rem;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: .8px;
+
+    align-self: flex-end;
+
+    transition: all .2s ease;
+    color: #ffffff;
+    background-color: rgb(22, 145, 29);
+}
+
+.content .btnConfirm:hover{
+    background-color: rgb(31, 156, 38);
+}
+

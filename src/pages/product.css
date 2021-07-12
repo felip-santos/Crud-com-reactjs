@@ -1,0 +1,100 @@
+#content-form{
+    width: 100%;
+    padding-top: 2rem;
+}
+
+#content-form h1{
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: .5px;
+}
+
+#content-form #form{
+    max-width: 1300px;
+    width: 95%;
+    margin: 2rem auto 0;
+    display: grid;
+    gap: 20px 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#form .input-content{
+    width: 100%;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#form .content-textarea{
+    grid-column: 1/4;
+}
+
+.input-content label{
+    margin-bottom: 5px;
+    color: #333;
+    font-size: .9rem;
+}
+
+.input-content .inputs{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: .8rem;
+    border-radius: 3px;
+    color: rgb(65, 65, 65);
+    box-shadow: 0 0 2px 0 #414141;
+}
+
+.input-content input[type="text"]{
+    height: 30px;
+    padding-left: 7px;
+}
+
+.input-content textarea{
+    height: 100px;
+    padding: 7px;
+    resize: vertical;
+}
+
+.input-content div{
+    display: flex;
+    align-items: center;
+}
+
+.input-content div .btn-add-info{
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    font-size: medium;
+    font-weight: 500;
+    margin-left: 1rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c7c7c7;
+}
+
+.img-span button{
+    padding: 0 7px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .8px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c7c7c7;
+}
+
+.img-span button img{
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+}
