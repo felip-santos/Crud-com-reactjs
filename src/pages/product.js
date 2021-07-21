@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from '../components/header/Header'
 import Select from '../components/select/select'
 
@@ -7,8 +7,19 @@ import './product.css'
 
 import Upload from '../assets/icons/cloud-upload.png'
 
-
 export default function Product(){
+
+    const [cardVisibility, setCardVisibility] = useState(false)
+    const [genresArray, setGenresArray] = useState([])
+
+    const toggleCardVisibility = () => {
+        setCardVisibility(!cardVisibility)
+    }
+
+    const addGenreIntoArray = (genre) => {
+        setGenresArray([...genresArray, genre])
+    }
+
     return(
 
         <div className="interface">
@@ -60,7 +71,9 @@ export default function Product(){
                         </div>
 
                         <div className="input-content">
-                            <div><span>Add platform</span><button className="btn-add-info">+</button></div>
+                            <div><span>Add platform</span>
+                                <button className="btn-add-info" onClick={() => toggleCardVisibility()}>+</button>
+                            </div>
                         </div>
 
                         <div className="input-content">
@@ -73,12 +86,16 @@ export default function Product(){
 
                     </div>
 
-                    <button>Confirm</button>
+                    <button className="btnSave" onClick={() => alert(genresArray)}>Confirm</button>
 
                 </div>
             </main>
 
-            
+            <Select 
+                visible={cardVisibility} 
+                toggleCardVisibility={toggleCardVisibility}
+                addGenreIntoArray={addGenreIntoArray}
+            />
 
         </div>
 

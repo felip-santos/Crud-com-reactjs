@@ -1,5 +1,7 @@
 import React from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom'
+
 import logo from '../../assets/logo.png';
 import home from '../../assets/icons/home.png';
 import product from '../../assets/icons/product.png';
@@ -17,20 +19,20 @@ export default function Header(){
 
             <div id="container-navlinks">
 
-                <div className="container-btn">
+                <Link to="/" className="container-btn">
                     <img src={home} />
                     <button>Home</button>
-                </div>
+                </Link>
 
-                <div className="container-btn">
+                <Link to="/src/addproduct" className="container-btn">
                     <img src={product} />
                     <button>Add product</button>
-                </div>
+                </Link>
 
-                <div className="container-btn">
+                <Link to="/src/listproducts" className="container-btn">
                     <img src={list} />
                     <button>List products</button>
-                </div>
+                </Link>
 
             </div>
 

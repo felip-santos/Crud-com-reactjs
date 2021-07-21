@@ -1,0 +1,22 @@
+.interface .mainHome{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main h1, main h2{
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.mainHome h1{
+    font-size: 3rem;
+    line-height: 60px;
+}
+
+.mainHome h2{
+    font-size: 1.5rem;
+    line-height: 50px;
+}
