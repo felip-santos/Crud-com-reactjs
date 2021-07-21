@@ -3,7 +3,7 @@ import './select.css';
 import CloseIcon from '@material-ui/icons/Close'
 
 const platform = [
-    "Playtation 1","Playtation 2","Playtation 3","Playtation 3",
+    "Playtation 1", "Playtation 2", "Playtation 3", "Playtation 3",
     "Xbox", "Xbox 360", "Xbox One", "Nintendo", "Microsoft Windows"
 ]
 
@@ -18,15 +18,15 @@ const genres = [
     },
     {
         id: 3,
-        name: "RPG" 
+        name: "RPG"
     },
     {
         id: 4,
-        name: "MMORPG" 
+        name: "MMORPG"
     },
     {
         id: 5,
-        name: "FPS" 
+        name: "FPS"
     },
     {
         id: 6,
@@ -42,11 +42,8 @@ const genres = [
     }
 ]
 
-export default function Select({visible, toggleCardVisibility, addGenreIntoArray}){
-
-
-
-    return(
+export default function Select({ visible, toggleCardVisibility, addGenreIntoArray }) {
+    return (
 
         <div className={visible ? "container-select cardVisible" : "cardHidden"}>
 

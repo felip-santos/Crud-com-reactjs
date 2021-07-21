@@ -7,9 +7,8 @@ const texto = `Lorem ipsum urna tincidunt porttitor convallis porta eros ut blan
     
     Suspendisse eleifend himenaeos iaculis posuere morbi iaculis felis fames ligula, class lobortis quis pulvinar diam feugiat convallis tellus odio, ligula convallis dictum pretium vivamus inceptos hendrerit elit. diam dictum dictumst hac consectetur pulvinar taciti enim lacus imperdiet est metus, conubia habitasse et interdum varius suscipit rutrum faucibus erat. cursus elementum aenean phasellus nisi fusce auctor, pretium congue eros ut ullamcorper nostra, felis blandit tortor platea ante. posuere curae cras praesent ultrices nibh nam tempus enim tortor augue aliquam, vehicula orci fames orci tellus consequat est dictumst elit sagittis cubilia, eleifend etiam himenaeos sed vitae odio ornare primis feugiat etiam.`
 
-export default function Card(visible, toggleCardGamerVisibility){
-
-    return(
+export default function Card({ visible, toggleCardGamerVisibility }) {
+    return (
         <div className={visible ? "container-card cardGamerVisible" : "cardGamerHidden"}>
 
             <div className="card">

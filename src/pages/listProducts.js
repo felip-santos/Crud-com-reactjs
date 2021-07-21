@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Header from '../components/header/Header'
 import CardGamer from '../components/card/card'
 
@@ -10,7 +10,7 @@ import './listProducts.css'
 
 import Search from '../assets/icons/search.png'
 
-export default function ListProducts(){
+export default function ListProducts() {
 
     const [cardGamerVisibility, setCardGamerVisibility] = useState(false)
 
@@ -81,7 +81,7 @@ export default function ListProducts(){
         }
     ]
 
-    return(
+    return (
 
         <div className="interface">
 
@@ -98,7 +98,7 @@ export default function ListProducts(){
                     <div className="field-container">
                         <label for="inputSearch">Search product</label>
                         <div>
-                            <input type="text" className="input-search" id="inputSearch" placeholder="Ex: Just Cause 4"/>
+                            <input type="text" className="input-search" id="inputSearch" placeholder="Ex: Just Cause 4" />
                             <button><img src={Search} /></button>
                         </div>
                     </div>
@@ -144,7 +144,7 @@ export default function ListProducts(){
 
             </main>
 
-            <CardGamer 
+            <CardGamer
                 visible={cardGamerVisibility}
                 toggleCardGamerVisibility={toggleCardGamerVisibility}
             />
